@@ -6,7 +6,8 @@ LVORawDoFmt			equ	-522
 LVOPutStr			equ	-948
 
 start:
-	bsr		day1
+	; bsr		day1
+	bsr		day2
 	rts
 
 ****************************************************
@@ -14,7 +15,8 @@ start:
 * Day exercises
 *
 ****************************************************
-	include days/day1.s
+	; include days/day1.s
+	include days/day2.s
 	even
 
 ****************************************************
