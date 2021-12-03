@@ -8,7 +8,7 @@ namespace AOC2021.Days
 {
     public class Day1
     {
-        private int[] ReadFile1()
+        private int[] ReadFile()
         {
             var lines = File
                 .ReadAllLines(@"..\..\..\days\inputs\day1.txt")
@@ -39,7 +39,7 @@ namespace AOC2021.Days
         {
             Console.WriteLine("Day 1");
 
-            var input1 = ReadFile1();
+            var input1 = ReadFile();
             Console.WriteLine($" - Part 1 = {ProcessPart1(input1)}");
             Console.WriteLine($" - Part 2 = {ProcessPart2(input1)}");
         }

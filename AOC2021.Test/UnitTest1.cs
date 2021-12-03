@@ -63,5 +63,35 @@ namespace AOC2021.Test
 
             Assert.Equal(900, result);
         }
+
+        [Fact]
+        public void Day3_part1_ReturnsExpected()
+        {
+            var day = new Day3();
+
+            var input = new string[] {
+                "00100","11110","10110","10111",
+                "10101","01111","00111","11100",
+                "10000","11001","00010","01010"
+            };
+            var result = day.ProcessPart1(input);
+
+            Assert.Equal(198, result);
+        }
+
+        [Fact]
+        public void Day3_part2_ReturnsExpected()
+        {
+            var day = new Day3();
+
+            var input = new string[] {
+                "00100","11110","10110","10111",
+                "10101","01111","00111","11100",
+                "10000","11001","00010","01010"
+            };
+            var result = day.ProcessPart2(input);
+
+            Assert.Equal(230, result);
+        }
     }
 }
