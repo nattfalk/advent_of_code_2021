@@ -7,7 +7,8 @@ LVOPutStr			equ	-948
 
 start:
 	; bsr		day1
-	bsr		day2
+	; bsr		day2
+	bsr		day3
 	rts
 
 ****************************************************
@@ -16,7 +17,8 @@ start:
 *
 ****************************************************
 	; include days/day1.s
-	include days/day2.s
+	; include days/day2.s
+	include days/day3.s
 	even
 
 ****************************************************
