@@ -199,5 +199,27 @@ namespace AOC2021.Test
 
             Assert.Equal(12, result);
         }
+
+        [Fact]
+        public void Day6_part1_ReturnsExpected()
+        {
+            var day = new Day6();
+
+            var input = "3,4,3,1,2";
+            var result = day.ProcessPart1(input);
+
+            Assert.Equal(5934, result);
+        }
+
+        [Fact]
+        public void Day6_part2_ReturnsExpected()
+        {
+            var day = new Day6();
+
+            var input = "3,4,3,1,2";
+            var result = day.ProcessPart2(input);
+
+            Assert.Equal(26984457539, result);
+        }
     }
 }
