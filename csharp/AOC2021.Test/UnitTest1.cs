@@ -221,5 +221,18 @@ namespace AOC2021.Test
 
             Assert.Equal(26984457539, result);
         }
+
+        [Fact]
+        public void Day7_ReturnsExpected()
+        {
+            var day = new Day7();
+
+            var input = "16,1,2,0,4,2,7,1,2,14";
+            var part1 = day.ProcessPart1(input);
+            var part2 = day.ProcessPart2(input);
+
+            Assert.Equal(37, part1);
+            Assert.Equal(168, part2);
+        }
     }
 }
