@@ -261,5 +261,22 @@ gcafb gcf dcaebfg ecagb gf abcdeg gaef cafbge fdbac fegbdc | fgae cfgab fg bagce
             Assert.Equal(5353, part2);
             Assert.Equal(61229, part22);
         }
+
+        [Fact]
+        public void Day9_ReturnsExpected()
+        {
+            var input = @"2199943210
+3987894921
+9856789892
+8767896789
+9899965678";
+
+            var day = new Day9();
+            var part1 = day.ProcessPart1(input);
+            var part2 = day.ProcessPart2(input);
+
+            Assert.Equal(15, part1);
+            Assert.Equal(1134, part2);
+        }
     }
 }
