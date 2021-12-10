@@ -7,7 +7,7 @@ namespace AOC2021.Test
     public class DayTests
     {
         [Fact]
-        public void Day1_part1_ReturnsExpected()
+        public void Day01_part1_ReturnsExpected()
         {
             var day = new Day1();
 
@@ -18,7 +18,7 @@ namespace AOC2021.Test
         }
 
         [Fact]
-        public void Day1_part2_ReturnsExpected()
+        public void Day01_part2_ReturnsExpected()
         {
             var day = new Day1();
 
@@ -29,7 +29,7 @@ namespace AOC2021.Test
         }
 
         [Fact]
-        public void Day2_part1_ReturnsExpected()
+        public void Day02_part1_ReturnsExpected()
         {
             var day = new Day2();
 
@@ -47,7 +47,7 @@ namespace AOC2021.Test
         }
 
         [Fact]
-        public void Day2_part2_ReturnsExpected()
+        public void Day02_part2_ReturnsExpected()
         {
             var day = new Day2();
 
@@ -65,7 +65,7 @@ namespace AOC2021.Test
         }
 
         [Fact]
-        public void Day3_part1_ReturnsExpected()
+        public void Day03_part1_ReturnsExpected()
         {
             var day = new Day3();
 
@@ -80,7 +80,7 @@ namespace AOC2021.Test
         }
 
         [Fact]
-        public void Day3_part2_ReturnsExpected()
+        public void Day03_part2_ReturnsExpected()
         {
             var day = new Day3();
 
@@ -95,7 +95,7 @@ namespace AOC2021.Test
         }
 
         [Fact]
-        public void Day4_part1_ReturnsExpected()
+        public void Day04_part1_ReturnsExpected()
         {
             var day = new Day4();
 
@@ -126,7 +126,7 @@ namespace AOC2021.Test
         }
 
         [Fact]
-        public void Day4_part2_ReturnsExpected()
+        public void Day04_part2_ReturnsExpected()
         {
             var day = new Day4();
 
@@ -157,7 +157,7 @@ namespace AOC2021.Test
         }
 
         [Fact]
-        public void Day5_part1_ReturnsExpected()
+        public void Day05_part1_ReturnsExpected()
         {
             var day = new Day5();
 
@@ -179,7 +179,7 @@ namespace AOC2021.Test
         }
 
         [Fact]
-        public void Day5_part2_ReturnsExpected()
+        public void Day05_part2_ReturnsExpected()
         {
             var day = new Day5();
 
@@ -201,7 +201,7 @@ namespace AOC2021.Test
         }
 
         [Fact]
-        public void Day6_part1_ReturnsExpected()
+        public void Day06_part1_ReturnsExpected()
         {
             var day = new Day6();
 
@@ -212,7 +212,7 @@ namespace AOC2021.Test
         }
 
         [Fact]
-        public void Day6_part2_ReturnsExpected()
+        public void Day06_part2_ReturnsExpected()
         {
             var day = new Day6();
 
@@ -223,7 +223,7 @@ namespace AOC2021.Test
         }
 
         [Fact]
-        public void Day7_ReturnsExpected()
+        public void Day07_ReturnsExpected()
         {
             var day = new Day7();
 
@@ -236,7 +236,7 @@ namespace AOC2021.Test
         }
 
         [Fact]
-        public void Day8_ReturnsExpected()
+        public void Day08_ReturnsExpected()
         {
             var input = @"be cfbegad cbdgef fgaecd cgeb fdcge agebfd fecdb fabcd edb | fdgacbe cefdb cefbgd gcbe
 edbfga begcd cbg gc gcadebf fbgde acbgfd abcde gfcbed gfec | fcgedb cgb dgebacf gc
@@ -263,7 +263,7 @@ gcafb gcf dcaebfg ecagb gf abcdeg gaef cafbge fdbac fegbdc | fgae cfgab fg bagce
         }
 
         [Fact]
-        public void Day9_ReturnsExpected()
+        public void Day09_ReturnsExpected()
         {
             var input = @"2199943210
 3987894921
@@ -277,6 +277,28 @@ gcafb gcf dcaebfg ecagb gf abcdeg gaef cafbge fdbac fegbdc | fgae cfgab fg bagce
 
             Assert.Equal(15, part1);
             Assert.Equal(1134, part2);
+        }
+
+        [Fact]
+        public void Day10_ReturnsExpected()
+        {
+            var input = @"[({(<(())[]>[[{[]{<()<>>
+[(()[<>])]({[<{<<[]>>(
+{([(<{}[<>[]}>{[]{[(<()>
+(((({<>}<{<{<>}{[]{[]{}
+[[<[([]))<([[{}[[()]]]
+[{[{({}]{}}([{[{{{}}([]
+{<[[]]>}<{[{[{[]{()[[[]
+[<(<(<(<{}))><([]([]()
+<{([([[(<>()){}]>(<<{{
+<{([{{}}[<[[[<>{}]]]>[]]";
+
+            var day = new Day10();
+            var part1 = day.ProcessPart1(input);
+            var part2 = day.ProcessPart2(input);
+
+            Assert.Equal(26397, part1);
+            Assert.Equal(288957, part2);
         }
     }
 }
