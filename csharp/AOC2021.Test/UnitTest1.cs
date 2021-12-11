@@ -300,5 +300,38 @@ gcafb gcf dcaebfg ecagb gf abcdeg gaef cafbge fdbac fegbdc | fgae cfgab fg bagce
             Assert.Equal(26397, part1);
             Assert.Equal(288957, part2);
         }
+
+        [Fact]
+        public void Day11_AfterStep1_ReturnsExpected()
+        {
+            var input = @"5483143223
+2745854711
+5264556173
+6141336146
+6357385478
+4167524645
+2176841721
+6882881134
+4846848554
+5283751526";
+
+            var day = new Day11();
+            (int part1, string energies) = day.ProcessPart1(input, 10);
+
+            Assert.Equal(204, part1);
+            Assert.Equal(@"0481112976
+0031112009
+0041112504
+0081111406
+0099111306
+0093511233
+0442361130
+5532252350
+0532250600
+0032240000", energies);
+
+            int part2 = day.ProcessPart2(input);
+            Assert.Equal(195, part2);
+        }
     }
 }
