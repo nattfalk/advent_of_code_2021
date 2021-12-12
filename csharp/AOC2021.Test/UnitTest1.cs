@@ -333,5 +333,56 @@ gcafb gcf dcaebfg ecagb gf abcdeg gaef cafbge fdbac fegbdc | fgae cfgab fg bagce
             int part2 = day.ProcessPart2(input);
             Assert.Equal(195, part2);
         }
+
+        [Trait("Category", "Day 12")]
+        [Fact]
+        public void Day12_ParseInput_ReturnCorrectNodelist()
+        {
+            var input = @"start-A
+A-end";
+
+            var day = new Day12();
+            var nodes = day.ParseInput(input);
+
+            Assert.Equal(3, nodes.Count);
+            Assert.Contains("A", nodes[0].Children);
+            Assert.Contains("end", nodes[1].Children);
+        }
+
+        [Trait("Category", "Day 12")]
+        [Fact]
+        public void Day12_AfterStep1_ReturnsExpected()
+        {
+            var input = @"start-A
+start-b
+A-c
+A-b
+b-d
+A-end
+b-end";
+
+            var day = new Day12();
+            var result = day.ProcessPart1(input);
+
+            Assert.Equal(10, result);
+        }
+
+        [Trait("Category", "Day 12")]
+        [Fact]
+        public void Day12_AfterStep2_ReturnsExpected()
+        {
+            var input = @"start-A
+start-b
+A-c
+A-b
+b-d
+A-end
+b-end";
+
+            var day = new Day12();
+            var result = day.ProcessPart2(input);
+
+            Assert.Equal(36, result);
+        }
     }
 }

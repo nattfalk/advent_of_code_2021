@@ -13,3 +13,4 @@ new Day8().Process();
 new Day9().Process();
 new Day10().Process();
 new Day11().Process();
+new Day12().Process();
