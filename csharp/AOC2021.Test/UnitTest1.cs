@@ -416,5 +416,60 @@ fold along x=5";
             Assert.Equal(17, result);
         }
 
+        [Fact]
+        public void Day14_AfterStep1_ReturnsExpected()
+        {
+            var input = @"NNCB
+
+CH -> B
+HH -> N
+CB -> H
+NH -> C
+HB -> C
+HC -> B
+HN -> C
+NN -> C
+BH -> H
+NC -> B
+NB -> B
+BN -> B
+BB -> N
+BC -> B
+CC -> N
+CN -> C";
+
+            var day = new Day14();
+            var result = day.ProcessPart1(input);
+
+            Assert.Equal(1588, result);
+        }
+
+        [Fact]
+        public void Day14_AfterStep2_ReturnsExpected()
+        {
+            var input = @"NNCB
+
+CH -> B
+HH -> N
+CB -> H
+NH -> C
+HB -> C
+HC -> B
+HN -> C
+NN -> C
+BH -> H
+NC -> B
+NB -> B
+BN -> B
+BB -> N
+BC -> B
+CC -> N
+CN -> C";
+
+            var day = new Day14();
+            var result = day.ProcessPart2(input);
+
+            Assert.Equal(2188189693529, result);
+        }
     }
 }
